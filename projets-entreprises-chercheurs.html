@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.97843589.js">
-<link rel="modulepreload" href="./_import/functions.b93e1750.js">
-<link rel="modulepreload" href="./_import/data.5959020b.js">
+<link rel="modulepreload" href="./_import/colors.8bf21797.js">
+<link rel="modulepreload" href="./_import/functions.60c420fb.js">
+<link rel="modulepreload" href="./_import/data.512b4b75.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740043972638,"size":28107});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1739458387196,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.4470f889.txt","lastModified":1739895367243,"size":2873});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1739458387197,"size":19224});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.75989c62.txt","lastModified":1740149276013,"size":19160});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
 define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.97843589.js"), import("./_import/functions.b93e1750.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.8bf21797.js"), import("./_import/functions.60c420fb.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
 }});
@@ -127,27 +127,27 @@ draw_waffle("ip_disruptive", -85)
 ))
 }});
 
-define({id: "32a40ad8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "0d496f67", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_project_goals",-85)
+draw_waffle("ip_project_goals",-70, 20)
 ))
 }});
 
-define({id: "f4dc727c", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "71e07b08", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_mitnahme",-85,10)
+draw_waffle("ip_mitnahme",-70,5)
 ))
 }});
 
-define({id: "d56dcc71", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "4c9c7595", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_wtt",-115)
+draw_waffle("ip_wtt",-100)
 ))
 }});
 
-define({id: "c804aa5a", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "46592c20", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_researchpartner",-115)
+draw_waffle("ip_researchpartner",-100)
 ))
 }});
 
@@ -169,9 +169,9 @@ draw_waffle("ip_radikal_inkr", -70)
 ))
 }});
 
-define({id: "d982bc28", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "61cd5db7", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_impuls",-115)
+draw_waffle("ip_impuls",-117)
 ))
 }});
 
@@ -217,15 +217,15 @@ draw_waffle("is_wtt", -85)
 ))
 }});
 
-define({id: "94e527d9", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "413d50c7", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_project_goals",  -85)
+draw_waffle("is_project_goals",  -100, 17)
 ))
 }});
 
-define({id: "aeedaeb6", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "d4056bcb", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_mitnahme", -85, 5)
+draw_waffle("is_mitnahme", -100, 10)
 ))
 }});
 
@@ -283,8 +283,8 @@ draw_waffle("is_mitnahme", -85, 5)
 <p>Une sélection de chiffres clés prouve l'efficacité en termes d'effets économiques qui n'auraient pas Certains chiffres clés témoignent de l'efficacité des effets économiques qui n'auraient pas pu être obtenus sans le projet soutenu. Un tiers des PME font état d'une croissance de l'emploi et créent ainsi de nouveaux postes hautement qualifiés. 3 entreprises sur 10 constatent une augmentation de leur chiffre d'affaires. Plus d'un quart des entreprises ont investi davantage dans la recherche et le développement (R&amp;D), que ce soit en termes d'employés dans le domaine de la R&amp;D ou de dépenses de R&amp;D. 12 % des entreprises font état de réductions de coûts.</p>
 <div><observablehq-loading></observablehq-loading><!--:98feb8c7:--></div>
 <h3 id="un-franc-d-aide-a-un-effet-de-levier-important" tabindex="-1"><a class="observablehq-header-anchor" href="#un-franc-d-aide-a-un-effet-de-levier-important">Un franc d'aide a un effet de levier important</a></h3>
-<p>En moyenne, un projet d'innovation conduit à la création de près de 2,5 emplois à temps plein supplémentaires au cours des années 2021-2023. En extrapolant sur les 350 projets en moyenne menés à bien au cours de cette période, entre 800 et 900 nouveaux emplois à temps plein sont ainsi créés dans les entreprises en Suisse.</p>
-<div style="font-size: 20px; font-weight: 700; max-width: 500px; padding-top: 10px; padding-bottom: 20px; text-align: center">800 – 900 emplois à temps plein par an</div>
+<p>En moyenne, un projet d'innovation conduit à la création de près de 2,5 emplois à temps plein supplémentaires au cours des années 2021–2023. En extrapolant sur les 350 projets en moyenne menés à bien au cours de cette période, entre 800 et 900 nouveaux emplois à temps plein sont ainsi créés dans les entreprises en Suisse.</p>
+<div style="font-size: 20px; font-weight: 700; max-width: 500px; padding-top: 10px; padding-bottom: 20px; text-align: center">+ 800 – 900 emplois à temps plein par an</div>
 <p>DLes emplois supplémentaires créés génèrent directement de la valeur ajoutée pour les entreprises. L'effet de levier de l'encouragement est considérable : chaque franc d'encouragement rapporte à l'économie environ quatre francs de valeur ajoutée, mesurés trois ans après l'encouragement et cumulés sur trois années supplémentaires. Les autres effets multiplicateurs indirects au sein des entreprises, par exemple les dépenses supplémentaires pour les prestations préalables des entreprises, ne sont pas pris en compte ici. En outre, les résultats présentés dans ce rapport montrent que les effets de l'encouragement de l'innovation vont bien au-delà des effets économiques immédiats <a href="./_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.</p>
 <div><observablehq-loading></observablehq-loading><!--:3d192e12:--></div>
 <div class="card" style="max-width: 640px">
@@ -324,14 +324,14 @@ Quelle:
 <p>La majorité des partenaires de projet impliqués ont entièrement atteint, voire dépassé leurs objectifs. Seule une petite partie des projets soutenus n'ont pas entièrement atteint ou n'ont pas atteint les objectifs fixés. Les projets innovants sont associés à des risques technologiques considérables et à des impondérables lors de la mise en œuvre sur le marché. Ces risques potentiels élevés soulignent la nécessité d'un encouragement public pour soutenir le transfert de savoir et de technologie, car les projets d'innovation ne seraient pas réalisés sans encouragement.</p>
 <p>Les faibles effets d'entraînement de l'encouragement le confirment : seules 5 % des entreprises déclarent qu'elles auraient réalisé le projet sous la même forme sans le soutien d'Innosuisse. 19 % l'auraient réalisé sous une forme modifiée ou réduite.</p>
   <div style="display: flex; gap: 15px;">
-  <div><observablehq-loading></observablehq-loading><!--:32a40ad8:--></div>
-  <div><observablehq-loading></observablehq-loading><!--:f4dc727c:--></div>
+  <div><observablehq-loading></observablehq-loading><!--:0d496f67:--></div>
+  <div><observablehq-loading></observablehq-loading><!--:71e07b08:--></div>
   </div>
 <h3 id="l-encouragement-d-innosuisse-renforce-le-transfert-de-savoir-et-de-technologie-tst-a-long-terme" tabindex="-1"><a class="observablehq-header-anchor" href="#l-encouragement-d-innosuisse-renforce-le-transfert-de-savoir-et-de-technologie-tst-a-long-terme">L'encouragement d'Innosuisse renforce le transfert de savoir et de technologie (TST) à long terme</a></h3>
-<p>Les projets d'innovation encouragent et renforcent le TST et la coopération entre les entreprises et la recherche. Les trois quarts des entreprises indiquent que le financement de projets a accéléré et renforcé leurs activités de recherche et développement. La coopération et le TST avec la recherche sont durables à long terme : près de la moitié des entreprises travaillent toujours avec leurs partenaires de recherche trois ans après la fin du projet. 15 % d'entre elles embauchent même du personnel de recherche ayant participé au projet, renforçant ainsi leur base interne de connaissances et d'innovation à long terme.</p>
+<p>Les projets d'innovation encouragent et renforcent le TST et la coopération entre les entreprises et la recherche. Les trois quarts des entreprises indiquent que le financement de projets a accéléré et renforcé leurs activités de recherche et développement. La coopération et le TST avec la recherche sont durables à long terme : près de la moitié des entreprises travaillent toujours avec leurs partenaires de recherche trois ans après la fin du projet. 15 % d'entre elles recrutent même du personnel de recherche ayant participé au projet, renforçant ainsi leur base interne de connaissances et d'innovation à long terme.</p>
   <div style="display: flex; gap: 15px;">
-    <observablehq-loading></observablehq-loading><!--:d56dcc71:-->
-    <observablehq-loading></observablehq-loading><!--:c804aa5a:-->
+    <observablehq-loading></observablehq-loading><!--:4c9c7595:-->
+    <observablehq-loading></observablehq-loading><!--:46592c20:-->
 </div>
 <h3 id="les-resultats-des-projets-sont-bases-sur-la-science" tabindex="-1"><a class="observablehq-header-anchor" href="#les-resultats-des-projets-sont-bases-sur-la-science">Les résultats des projets sont basés sur la science</a></h3>
 <p>L'output scientifique généré par les projets est remarquable. Plus de la moitié des projets donnent lieu à des co-publications entre les partenaires de mise en œuvre et les partenaires de recherche. Au niveau international, la Suisse occupe la première place dans ce domaine, qui est important pour les indices d'innovation (<a href="https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis-2024#/eis/indicators/3.2?country_scope=all&amp;highlight=CH" target="_blank" rel="noopener noreferrer">Commission européenne, 2024</a> &amp; <a href="https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile" target="_blank" rel="noopener noreferrer">OMPI, 2024</a>). Les projets d'innovation y contribuent. Le solide positionnement international en matière de transfert de savoir et de technologie est également mis en évidence par les résultats d'une étude du SEFRI (<a href="https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html" target="_blank" rel="noopener noreferrer">SEFRI, 2023</a>).</p>
@@ -345,7 +345,7 @@ Quelle:
 </div>
 <h3 id="les-entreprises-sont-majoritairement-a-l-origine-des-projets-d-innovation-et-transforment-les-resultats-de-la-recherche-en-valeur-ajoutee" tabindex="-1"><a class="observablehq-header-anchor" href="#les-entreprises-sont-majoritairement-a-l-origine-des-projets-d-innovation-et-transforment-les-resultats-de-la-recherche-en-valeur-ajoutee">Les entreprises sont majoritairement à l'origine des projets d'innovation et transforment les résultats de la recherche en valeur ajoutée</a></h3>
 <p>Le transfert de savoir et de technologie entre le partenaire de mise en œuvre et le partenaire de recherche est réciproque. Les entreprises développent des idées d'innovation à haut risque pour la recherche et le développement et obtiennent des résultats concrets de la recherche pour leur mise en œuvre et leur valorisation sur les marchés (voir <a href="#l-encouragement-a-des-effets-economiques-mesurables-et-significatifs-sur-plus-de-60-des-pme">la section sur les effets économiques</a>).</p>
-<div><observablehq-loading></observablehq-loading><!--:d982bc28:--></div>
+<div><observablehq-loading></observablehq-loading><!--:61cd5db7:--></div>
 <h3 id="les-projets-innosuisse-sont-un-succes-pour-les-partenaires-de-recherche-et-de-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#les-projets-innosuisse-sont-un-succes-pour-les-partenaires-de-recherche-et-de-mise-en-uvre">Les projets Innosuisse sont un succès pour les partenaires de recherche et de mise en œuvre</a></h3>
 <p>Les projets à haut risque doivent aussi pouvoir échouer, que ce soit en raison de risques technologiques ou de risques liés à la mise en œuvre de l'idée de projet sur le marché. Dans ce contexte, le taux de réussite légèrement inférieur des partenaires de mise en œuvre n'est pas inquiétant. Le fait que près des trois quarts des partenaires de recherche considèrent les projets comme un succès témoigne de la grande qualité scientifique de ces derniers.</p>
 <p>La différence entre les taux de réussite est compréhensible : pour les partenaires de recherche, la qualité scientifique et le transfert des connaissances issues de la recherche pour l'économie et la société sont prioritaires, tandis que pour les entreprises, l'application dans la pratique économique et la création de valeur sur les marchés sont également essentielles. Dans ce contexte, l'encouragement d'Innosuisse ne peut que créer des conditions importantes pour atteindre les résultats escomptés.</p>
@@ -374,12 +374,12 @@ Quelle:
 <p>Deux tiers des PME atteignent complètement ou dépassent les objectifs fixés avec les Chèques d'innovation. Cet encouragement facile d'accès et simple permet ainsi de vérifier la faisabilité des idées d'innovation et renforce la mise en œuvre ultérieure d'idées d'innovation incrémentales et radicales.</p>
 <p>Les faibles effets d'aubaine montrent que les Chèques d'innovation permettent d'examiner des idées qui n'auraient autrement pas trouvé leur place dans les activités quotidiennes. Seules 8 % des PME déclarent qu'elles auraient examiné l'idée d'innovation sous une forme similaire même sans encouragement. 19 % l'auraient examinée sous une forme légèrement modifiée.</p>
 <div style="display: flex; gap: 15px;">
-<observablehq-loading></observablehq-loading><!--:94e527d9:-->
-<observablehq-loading></observablehq-loading><!--:aeedaeb6:-->
+<observablehq-loading></observablehq-loading><!--:413d50c7:-->
+<observablehq-loading></observablehq-loading><!--:d4056bcb:-->
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./resultats-comparatifs"><span>Résultats comparatifs</span></a><a rel="next" href="./projets-chercheurs"><span>Projets d&#x27;innovation sans partenaire de mise on oeuvre</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-20T12:22:41">Feb 20, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-21T16:24:42">Feb 21, 2025</a>.</div>
 </footer>
 </div>
 </body>
